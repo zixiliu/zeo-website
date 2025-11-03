@@ -9,12 +9,12 @@
 <body>
   <header>
     <div class="container">
-      <img src="images/zixiliu_ID.jpeg" alt="Zeo Liu" class="profile-photo" />
-      <h1>Zeo Liu</h1>
+      <img src="images/zixiliu_ID.jpeg" alt="Zixi (Zeo) Liu" class="profile-photo" />
+      <h1>Zixi (Zeo) Liu</h1>
       <p>Robotics Researcher | Tactile Sensing & Grasp Stability</p>
       <nav>
         <a href="#about">About</a>
-        <a href="#work">Work</a>
+        <!-- <a href="#work">Work</a> -->
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -24,26 +24,142 @@
   <main>
     <section id="about" class="container">
       <h2>About Me</h2>
+
       <p>
-        I'm a robotics researcher focused on grasp stability estimation and tactile sensing for dexterous manipulation. 
-        My work bridges physics-based and machine learning models to enable robust robot performance in unstructured environments.
+        I'm a robotics researcher focused on manipulation. I am most recently a postdoctorial researcher with Meta FAIR under <b>Professor Jitendra Malik</b>. Previously, I finished my Ph.D. at Harvard University with <b>Professor Rob Howe</b>, with a thesis titled "Reliable Grasping with Tactile Sensing".
+      </p>
+      <p>
+        My work focuses on bridging <b>full-stack robotic manipulation</b> and <b>human-to-robot learning</b>. During my PhD, I designed tactile sensors and a dexterous robotic hand, integrated full systems, and developed friction-theoretical and physics–ML hybrid models for grasping. Building on this, at Meta FAIR, I created a pipeline to transfer skills from human demonstrations to any robotic embodiment, enabling rapid skill transfer and large-scale dataset generation.
+      </p>
+
+      <p>
+        Other <b>topics</b> I've worked on include: reinforcement learning, real2sim2real, human2robot transfer learning, robotic simulation, large-scale robot learning, tactile representation learning.
       </p>
     </section>
-
+<!--
     <section id="work" class="container">
       <h2>Work</h2>
       <p>
         Currently, I explore how tactile feedback and learning-based models can improve robotic grasping reliability. 
         Previously, at Meta AI, I developed pipelines for skill transfer from human demonstrations to robotic embodiments.
       </p>
-    </section>
+    </section> -->
 
     <section id="projects" class="container">
       <h2>Selected Projects</h2>
-      <ul>
-        <li><b>Tactile Sensing for Grasp Stability:</b> Designed hybrid physics–ML models for predicting slip and contact states.</li>
-        <li><b>Human-to-Robot Skill Transfer:</b> Created scalable systems for transferring manipulation skills across robot types.</li>
-      </ul>
+
+      <div class="project">
+        <img src="images/human2robot.png" alt="Human-to-Robot Skill Transfer" class="project-image"  style="width: 100%; height: auto;/>
+        <div class="project-info">
+          <h3>Human-to-Robot Skill Transfer</h3>
+          <p>
+            Developed scalable pipelines for transferring manipulation skills from human demonstrations to various robotic embodiments,
+            enabling generalizable and efficient robot learning.
+          </p>
+
+          <ul>
+          <li><em> One manuscript, in Review for ICRA 2026. </em></li>
+          <li><em> The other in preparation for submission. </em></li>
+        </ul>
+
+
+        </div>
+      </div>
+
+      <div class="project">
+        <!-- <img src="images/h2r_transfer.jpg" alt="Human-to-Robot Skill Transfer" class="project-image" /> -->
+        <div class="project-info">
+          <h3>Robot Tactile Representation Learning</h3>
+          <ul>
+          <li><a href="https://arxiv.org/abs/2506.14754">Higuera, C., Sharma, A., Fan, T., Bodduluri, C.K., Boots, B., Kaess, M., Lambeta, M., Wu, T., <strong style="color: maroon;">Liu, Z.</strong>, Hogan, F.R. and Mukadam, M., 2025. Tactile Beyond Pixels: Multisensory Touch Representations for Robot Manipulation. arXiv preprint arXiv:2506.14754.</a></li>
+          <li><a href="https://arxiv.org/abs/2505.11420">Sharma, A., Higuera, C., Bodduluri, C.K., <strong style="color: maroon;">Liu, Z.</strong>, Fan, T., Hellebrekers, T., Lambeta, M., Boots, B., Kaess, M., Wu, T. and Hogan, F.R., 2025. Self-supervised perception for tactile skin covered dexterous hands. arXiv preprint arXiv:2505.11420.</a> </li>
+        </ul>
+
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Physics-ML Hybrid Models for Grasping</h3>
+        <img src="images/hybrid.png" alt="Hybrid"
+     class="project-image" style="width: 70%; height: auto;" />
+        <div class="project-info">
+
+        <ul>
+          <li>Evaluating the role of physics-based models in robotic grasping - useful in physics-ML hybrid models especially when data is limited</li>
+          <li>Enhancing machine learning by using parameters from physical models. </li>
+          <li>Faster training, reduced data requirements, interpretable models, and improved grasp stability for deployment in unstructured environments.</li>
+        </ul>
+        <em> In preparation for submission. </em>
+        </div>
+      </div>
+
+
+    <div class="project" >
+        <h3>Novel Stochastic Friction Model</h3>
+        <img src="images/friction.png" alt="friction"
+     class="project-image" style="width: 70%; height: auto;" />
+        <div class="project-info">
+
+        <ul>
+          <li> Discovery: The coefficient of friction is a stochastic variable and varies strongly with contact force and velocity.</li>
+          <li> Development of an accurate model of slipping as a continuous function. </li>
+          <li> Implication: potentially more realistic physics engines for simulation and machine learning.</li>
+        </ul>
+        <p>
+            <a href="https://ieeexplore.ieee.org/document/10173619"><strong style="color: maroon;">Liu, Z.</strong> and Howe, R.D., 2023. Beyond Coulomb: Stochastic friction models for practical grasping and manipulation. IEEE Robotics and Automation Letters, 8(8), pp.5140-5147.</a>
+          </p>
+        </div>
+    </div>
+
+    <div class="project">
+      <h3>How to Leverage Tactile Sensing without Tactile Sensors</h3>
+        <img src="images/RL.png" alt="RL"
+     class="project-image" style="width: 70%; height: auto;" />
+        <div class="project-info">
+
+        <ul>
+          <li>Using Reinforcement Learning to evaluate robot hands with various tactile resolutions.</li>
+          <li>Discovery: training with sensor-rich rewards allows for reduced sensing.</li>
+          <li>Implication: enabling low-cost, high-performance robots and transforming success rate vs. cost trade-offs.</li>
+        </ul>
+          <p>
+            <a href="https://arxiv.org/abs/2109.11234">Koenig, A., <strong style="color: maroon;">Liu, Z.</strong>, Janson, L. and Howe, R., 2022, October. The role of tactile sensing in learning and deploying grasp refinement algorithms. In 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) (pp. 7766-7772). IEEE.</a>
+          </p>
+        </div>
+    </div>
+
+
+    <div class="project">
+      <h3>Sensor & Hardware</h3>
+        <img src="images/hardware.png" alt="hardware"
+     class="project-image" style="width: 70%; height: auto;" />
+        <div class="project-info">
+          <!-- <h3>Tactile Sensing for Grasp Stability</h3> -->
+          <ul>
+          <li>Designed, developed, and characterized tactile sensors with gold-standard instruments.</li>
+          <li>Designed & developed underactuated 3-fingered robot hand with tactile sensors.</li>
+          <li>Integrated with UR-5 robot arm and independent gold-standard grasp paramter tracking instruments.</li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="project">
+
+      <h3>Collision Localization & Force Prediction</h3>
+      <img src="images/collision.png" alt="collision"
+     class="project-image" style="width: 30%; height: auto;" />
+        <div class="project-info">
+        <ul>
+          <li> Accurate estimation of the contact force and contact location of a disturbance load using machine learning.</li>
+          <li> Implication: enabling recovery from grasp error for robots with tactile sensors.</li>
+        </ul>
+        <p>
+            <em> In Review for ICRA 2026. </em>
+          </p>
+        </div>
+    </div>
+
+
     </section>
 
     <section id="contact" class="container">
