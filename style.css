@@ -15,7 +15,7 @@ header {
 
   /* keep gradient overlay but lighter */
   background-image:
-    linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.0)),
+    linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.0)),
     url("images/header-bg.png");
   background-position: center;
   background-size: cover;
@@ -32,7 +32,7 @@ header {
 }
 
 header .container {
-  background-color: rgba(255, 255, 255, 0.4); /* semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.2); /* semi-transparent white */
   border-radius: 16px;
   padding: 2rem;
   display: inline-block;
@@ -110,12 +110,12 @@ h2 {
   margin-bottom: 4rem;
 }
 
-.project im/*g {
+.project img {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   margin-bottom: 1rem;
   width: 100%;
-}*/
+}
 
 .project-info ul {
   padding-left: 1.2rem;
